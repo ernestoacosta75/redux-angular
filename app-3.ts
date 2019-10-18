@@ -1,6 +1,6 @@
-import {Action, Reducer} from "../ngrx-fake/ngrx";
-import {counterReducer} from "./counter.reducer";
-import {incrementAction} from "./counter.actions";
+import {Action, Reducer} from "./ngrx-fake/ngrx";
+import {counterReducer} from "./counter/counter.reducer";
+import {incrementAction} from "./counter/counter.actions";
 
 
 class Store<T> {
