@@ -1,6 +1,6 @@
 import {Action, Reducer} from "./ngrx-fake/ngrx";
 import {counterReducer} from "./counter/counter.reducer";
-import {incrementAction} from "./counter/counter.actions";
+import { incrementAction, multiplyAction } from './counter/counter.actions';
 
 
 class Store<T> {
@@ -23,3 +23,10 @@ const store = new Store(counterReducer, 10);
 console.log(store.getState());
 
 store.dispatch(incrementAction);
+store.dispatch(incrementAction);
+
+console.log(store.getState());
+
+store.dispatch(multiplyAction);
+
+console.log(store.getState());
